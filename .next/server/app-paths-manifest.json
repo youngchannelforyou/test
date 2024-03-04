@@ -1,5 +1,4 @@
 {
-  "/page": "app/page.js",
   "/okky/page": "app/okky/page.js",
-  "/thank/page": "app/thank/page.js"
+  "/server/updateAccessCount/page": "app/server/updateAccessCount/page.js"
 }

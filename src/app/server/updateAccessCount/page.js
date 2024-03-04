@@ -31,7 +31,7 @@ export default async function handler(req, res) {
     const { countParameter } = req.searchParams; // URL로부터 쿼리 매개변수 추출
 
     // 데이터베이스에 count 값과 함께 삽입 또는 갱신하는 쿼리 실행
-    const query = `INSERT INTO AccessCounts (count) VALUES (${countParameter})`;
+    const query = `INSERT INTO AccessCounts (count) VALUES ('${countParameter}')`;
 
     connection.query(query, (err, result) => {
         if (err) {
