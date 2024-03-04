@@ -21,16 +21,8 @@ export default function handler(req, res) {
         });
     }
 
-    db.connect((err) => {
-        if (err) {
-            if (err) {
-                console.error('Error connecting to database:', err);
-            }
-            console.log('Connected to database');
-            executeQuery(query);
-        }
-        console.log('Connected to database');
-        executeQuery(query);
-    });
+
+    executeQuery(query);
+
 
 }

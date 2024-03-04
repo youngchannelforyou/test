@@ -9,7 +9,7 @@ const connection = mysql.createConnection({
     user: 'root',
     password: 'test',
     database: 'okkyAccessCounts', // 데이터베이스 이름
-    connectTimeout: 9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999990000
+    connectTimeout: 20000
 });
 
 
