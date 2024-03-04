@@ -70,6 +70,7 @@ function OkkySurvey({ updateAccessCount }) {
         if (surveyData.age !== '' && surveyData.occupation !== '' && surveyData.aiProficiency !== '' && surveyData.domainsOfInterest !== '' && surveyData.purchaseIntent !== '') {
             // 설문 데이터를 서버로 제출하는 함수 호출
             updateSurveyData();
+            window.location.href = "/thank";
         } else {
             alert('모든 항목을 입력해주세요.'); // 또는 다른 방식으로 사용자에게 안내
         }
