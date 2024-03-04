@@ -33,7 +33,7 @@ export default async function handler(req, res) {
     // 데이터베이스에 count 값과 함께 삽입 또는 갱신하는 쿼리 실행
     const query = `INSERT INTO AccessCounts (count) VALUES (${countParameter})`;
 
-    db.query(query, (err, result) => {
+    connection.query(query, (err, result) => {
         if (err) {
             console.error('Error updating access count:', err);
         } else {
