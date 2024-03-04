@@ -5,6 +5,14 @@ const router = express.Router();
 const db = require('../db');
 
 export default function handler(req, res) {
+    db.connect((err) => {
+        if (err) {
+            console.error('Error connecting to database:', err);
+            return;
+        }
+        console.log('Connected to database');
+    });
+
     // 클라이언트로부터의 요청에서 데이터 추출
     const { countParameter } = req.searchParams; // URL로부터 쿼리 매개변수 추출
 
