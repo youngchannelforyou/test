@@ -8,7 +8,7 @@ const connection = mysql.createConnection({
     port: 31081,
     user: 'root',
     password: 'test',
-    database: 'okkyAccessCounts',
+    database: 'okkyAccessCounts'
 });
 
 
