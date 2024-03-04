@@ -13,16 +13,11 @@ export default function handler(req, res) {
     const query = `INSERT INTO AccessCounts (count) VALUES (${countParameter})`;
 
 
-    executeQuery(query);
-
-    // 쿼리 실행 함수
-    function executeQuery(query) {
-        db.query(query, (err, result) => {
-            if (err) {
-                console.error('Error updating access count:', err);
-            } else {
-                // 성공적으로 쿼리가 실행된 경우에 대한 처리
-            }
-        });
-    }
+    db.query(query, (err, result) => {
+        if (err) {
+            console.error('Error updating access count:', err);
+        } else {
+            // 성공적으로 쿼리가 실행된 경우에 대한 처리
+        }
+    });
 }
