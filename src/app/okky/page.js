@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 import './one.css';
 
-function OkkySurvey({ updateAccessCount }) {
+function OkkySurvey() {
     const [accessCount, setAccessCount] = useState(0);
     const [formCompleted, setFormCompleted] = useState(false);
     const [surveyData, setSurveyData] = useState({
