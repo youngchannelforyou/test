@@ -1,4 +1,3 @@
 {
-  "/okky/page": "app/okky/page.js",
-  "/server/updateAccessCount/page": "app/server/updateAccessCount/page.js"
+  "/everytime/page": "app/everytime/page.js"
 }
