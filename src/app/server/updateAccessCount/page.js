@@ -5,8 +5,6 @@ const router = express.Router();
 const mysql = require('mysql');
 // const db = require('../db');
 
-const mysql = require('mysql');
-
 // MariaDB 연결 설정
 const connection = mysql.createConnection({
     host: 'svc.sel5.cloudtype.app',
