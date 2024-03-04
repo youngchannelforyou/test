@@ -10,7 +10,7 @@ export default function handler(req, res) {
     const { countParameter } = req.searchParams; // URL로부터 쿼리 매개변수 추출
 
     // 데이터베이스에 count 값과 함께 삽입 또는 갱신하는 쿼리 실행
-    const query = `INSERT INTO AccessCounts (count) VALUES ('${countParameter}') ON DUPLICATE KEY UPDATE count = count + '${countParameter}'`;
+    const query = `INSERT INTO AccessCounts (count) VALUES (${countParameter})`;
 
     // 데이터베이스 연결 상태 확인 후 쿼리 실행
     if (db.state === 'disconnected') {

@@ -20,6 +20,7 @@ export default function handler(req, res) {
             }
         });
     }
+
     db.connect((err) => {
         if (err) {
             if (err) {
