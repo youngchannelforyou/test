@@ -8,8 +8,7 @@ const connection = mysql.createConnection({
     port: 31081,
     user: 'root',
     password: 'test',
-    database: 'okkyAccessCounts', // 데이터베이스 이름
-    connectTimeout: 20000
+    database: 'okkyAccessCounts',
 });
 
 
