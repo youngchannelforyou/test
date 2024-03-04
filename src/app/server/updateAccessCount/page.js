@@ -2,11 +2,12 @@
 
 const express = require('express');
 const router = express.Router();
+const mysql = require('mysql');
 
 export default function handler(req, res) {
 
 
-    const mysql = require('mysql');
+
 
     // MariaDB 연결 설정
     const connection = mysql.createConnection({
