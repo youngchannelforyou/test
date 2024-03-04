@@ -1,0 +1,27 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    touch-action: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border: none;
+
+}
+
+@font-face {
+    font-family: 'AppleSDGothicNeoB00';
+    src: url('/font/APPLESDGOTHICNEOB.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'Gmarket Sans';
+    src: url('/font/GmarketSansBold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Gmarket Sans TTF';
+    src: url('/font/GmarketSansMedium.otf') format('opentype');
+}
